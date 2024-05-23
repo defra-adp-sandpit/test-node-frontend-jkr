@@ -1,0 +1,3 @@
+services:
+  test-node-frontend-jkr:
+    command: npm run start:debug

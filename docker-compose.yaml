@@ -1,0 +1,10 @@
+services:
+  test-node-frontend-jkr:
+    build:
+      context: .
+      target: production
+    image: test-node-frontend-jkr
+    container_name: test-node-frontend-jkr
+    environment:
+      APPINSIGHTS_CLOUDROLE: test-node-frontend-jkr-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
